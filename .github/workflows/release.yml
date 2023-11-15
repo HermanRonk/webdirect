@@ -82,5 +82,3 @@ jobs:
         # against the sigstore community Fulcio instance.
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
       
-      - name: Call webhook
-        run: curl -X POST https://pt.thedrunkendruid.com/api/stacks/webhooks/092527b9-1215-4ba9-9111-7ce8f910d8a0
