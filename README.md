@@ -2,7 +2,7 @@
 
 This Docker container listens (by default) on port 80 and redirects all web traffic permanently to the given target domain/URL.
 
-_Hint: This repo was forked from https://github.com/MorbZ/docker-web-redirect._
+_Hint: This repo was forked from https://github.com/Arbarwings/docker-web-redirect._
 
 ## Features ##
 - Nginx 1.25
@@ -40,8 +40,3 @@ services:
       - REDIRECT_TARGET=mydomain.com
 ```
 
-### Build the image yourself ###
-`$ docker build -t arbarwings/docker-web-redirect:latest .`
-
-### Source code ###
-https://github.com/Arbarwings/docker-web-redirect
